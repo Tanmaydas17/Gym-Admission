@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANMAY'S FITNESS</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        color: rgb(224, 21, 218);
+        font-style: italic;
+        margin: 0px;
+        border: 4px;
+        padding: 0px;
+        background: url("https://images.pexels.com/photos/1480520/pexels-photo-1480520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        height: 500px;
+
+    }
+
+    .left {
+        display: inline-block;
+        border: 4px solid yellow;
+        position: absolute;
+        filter: invert(100%);
+        top: 20px;
+        width: 120px;
+        left: 150px;
+    }
+
+    .left2 img {
+        width: 150px;
+        position: -webkit-sticky;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        font: bold;
+        top: 20px;
+        right: 40px;
+        width: 120px;
+    }
+
+    .btn {
+        margin: 0px 10px;
+        background-color: blue;
+        color: rgb(82, 235, 35);
+        border-radius: 10px;
+        border: 4px solid rebeccapurple;
+        font-style: italic;
+    }
+
+    .mid1 {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px;
+
+    }
+
+    .item {
+        border: 2px solid red;
+    }
+
+    .item:hover {
+        background-color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .container {
+        border: 4px solid yellow;
+        padding: 4px 4px;
+        width: 40%;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <header class="header ">
+        <!--left box for llogo-->
+        <div class="left">
+            <div class="item">Free Trial</div>
+        </div>
+        <div class="left2  ">
+            <img src="img/gymlogo2.jpg" alt="">
+            <div>TANMAY FITNESS</div>
+        </div>
+        <!--mid box for navibar-->
+        <div class="mid1">
+            <div class="item">Contact With Us</div>
+            <div class="item"> HOME</div>
+            <div class="item"> Features</div>
+            <div class="item"> Proframes</div>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <div class="item">TANMAY GYM</div>
+            <button class="btn item">Register free</button>
+            <button class="btn item">Email us</button>
+        </div>
+    </header>
+    <div class="container item">
+        <h1>Welcome to our gym in kharagpur</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Aadhar Card">
+            </div>
+            <button class="btn">SUBMIT NOW</button>
+        </form>
+    </div>
+</body>
+
+</html>
